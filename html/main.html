@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jhp_main</title>
+    <script src="../js/custom.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <div class="wrap">
@@ -23,13 +25,16 @@
             <a href="#none">menu03</a>
           </li>
         </ul>
-        <button type="button">
+        <button type="button" class="write_btn">
           <img src="../img/write.svg" alt="글쓰기" />
         </button>
       </header>
       <main class="main_area">
         <section class="main_img"></section>
       </main>
+      <div class="gotop" onclick="scrollToTop()">
+        <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
+      </div>
     </div>
   </body>
 </html>

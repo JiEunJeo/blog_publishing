@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jhp_step01</title>
+    <script src="../js/custom.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/step01.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <div class="wrap">
@@ -14,7 +16,7 @@
           <img src="../img/logo.png" alt="로고" />
         </a>
         <ul class="side_menu_area">
-          <li">
+          <li>
             <a href="#none" class="side_menu present_page">menu01</a>
           </li>
           <li>
@@ -24,7 +26,7 @@
             <a href="#none" class="side_menu">menu03</a>
           </li>
         </ul>
-        <button type="button">
+        <button type="button" class="write_btn">
           <img src="../img/write.svg" alt="글쓰기" />
         </button>
       </header>
@@ -114,6 +116,9 @@
           </div>
         </section>
       </main>
+      <div class="gotop" onclick="scrollToTop()">
+        <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
+      </div>
     </div>
   </body>
 </html>

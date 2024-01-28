@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jhp_step02</title>
+    <script src="../js/custom.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/step02.css">
+    <link rel="stylesheet" href="../css/step02.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <div class="wrap">
@@ -14,7 +16,7 @@
           <img src="../img/logo.png" alt="로고" />
         </a>
         <ul class="side_menu_area">
-          <li">
+          <li>
             <a href="#none" class="side_menu present_page">menu01</a>
           </li>
           <li>
@@ -24,7 +26,7 @@
             <a href="#none" class="side_menu">menu03</a>
           </li>
         </ul>
-        <button type="button">
+        <button type="button" class="write_btn">
           <img src="../img/write.svg" alt="글쓰기" />
         </button>
       </header>
@@ -38,29 +40,60 @@
             <ul class="writing_btns">
               <li>
                 <button type="button">
-                  <img src="../img/delete.svg" alt="삭제">
+                  <img src="../img/delete.svg" alt="삭제" />
                 </button>
               </li>
               <li>
                 <button type="button">
-                  <img src="../img/eye-off.svg" alt="비공개">
+                  <img src="../img/eye-off.svg" alt="비공개" />
                 </button>
               </li>
               <li>
                 <button type="button">
-                  <img src="../img/edit.svg" alt="수정">
+                  <img src="../img/edit.svg" alt="수정" />
                 </button>
               </li>
             </ul>
           </div>
           <div class="writing_main">
-            글 내용
+            글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+            내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용
           </div>
         </section>
         <section class="detailed_category_area">
           <div>
-            <h3 class="detailed_title"><strong class="menu_name">MENU01</strong>의 카테고리 글</h3>
-            <ul>
+            <h3 class="detailed_title">
+              <strong class="menu_name">MENU01</strong>의 카테고리 글
+            </h3>
+            <ul class="detailed_box">
+              <li>
+                <a href="#none" class="detailed_list">
+                  <p>글 제목</p>
+                  <span class="writing_time">0000.00.00 00:00</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="detailed_list">
+                  <p>글 제목</p>
+                  <span class="writing_time">0000.00.00 00:00</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="detailed_list">
+                  <p>글 제목</p>
+                  <span class="writing_time">0000.00.00 00:00</span>
+                </a>
+              </li>
               <li>
                 <a href="#none" class="detailed_list">
                   <p>글 제목</p>
@@ -98,7 +131,11 @@
         </section>
         <section class="comment_area">
           <form class="comment_form">
-            <input class="comment_txt" type="text" placeholder="자유롭게 댓글을 달아주세요.">
+            <input
+              class="comment_txt"
+              type="text"
+              placeholder="자유롭게 댓글을 달아주세요."
+            />
             <button type="button" class="comment_submit">등록</button>
           </form>
           <ul class="comment_box">
@@ -110,9 +147,16 @@
               <span class="writing_time">0000.00.00 00:00</span>
               <p class="comment">댓글 내용</p>
             </li>
+            <li>
+              <span class="writing_time">0000.00.00 00:00</span>
+              <p class="comment">댓글 내용</p>
+            </li>
           </ul>
         </section>
       </main>
+      <div class="gotop" onclick="scrollToTop()">
+        <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
+      </div>
     </div>
   </body>
 </html>
