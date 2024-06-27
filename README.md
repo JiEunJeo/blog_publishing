@@ -21,5 +21,3 @@
 ```
 npm run dev
 ```
-
-test
