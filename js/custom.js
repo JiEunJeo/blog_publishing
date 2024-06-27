@@ -1,19 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // 이벤트 리스너 및 함수 호출
-  document.addEventListener("scroll", function () {
-    var gotopElement = document.querySelector(".gotop");
+$(document).ready(function () {
+  //gototop 버튼 표시
+  $(window).on("scroll", function () {
+    var gotopElement = $(".gotop");
 
-    if (window.scrollY > 80) {
-      gotopElement.classList.add("active");
+    if ($(this).scrollTop() > 80) {
+      gotopElement.addClass("active");
     } else {
-      gotopElement.classList.remove("active");
+      gotopElement.removeClass("active");
     }
+  });
+
+  //login 화면 - 회원가입 버튼 클릭 시 ui 변경
+  $(".signup_btn").click(function () {
+    $(".login_box").fadeOut(400, function () {
+      $(".signup_box").removeClass("hidden").fadeIn(10000);
+    });
   });
 });
 
 function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  $("html, body").animate({ scrollTop: 0 }, "smooth");
 }

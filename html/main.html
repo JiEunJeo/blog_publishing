@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jhp_main</title>
+    <title>메인화면</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <div class="wrap">
-      <header class="side_bar">
-        <a href="#none" class="logo">
-          <img src="../img/logo.png" alt="로고" />
-        </a>
-        <ul class="side_menu_area">
-          <li class="side_menu present_page">
-            <a href="#none">menu01</a>
-          </li>
-          <li class="side_menu">
-            <a href="#none">menu02</a>
-          </li>
-          <li class="side_menu">
-            <a href="#none">menu03</a>
-          </li>
-        </ul>
-        <button type="button" class="write_btn">
-          <img src="../img/write.svg" alt="글쓰기" />
-        </button>
+      <header class="side_bar" style="height: 100vh;">
+        <div class="side_top">
+          <a href="#none">
+            <img src="../img/logo.png" alt="로고" />
+          </a>
+          <button type="button" class="write_btn">
+            <img src="../img/write.svg" alt="글쓰기" />
+          </button>
+          <ul class="side_menu_area">
+            <li">
+              <a href="#none" class="side_menu present_page">menu01</a>
+            </li>
+            <li>
+              <a href="#none" class="side_menu">menu02</a>
+            </li>
+            <li>
+              <a href="#none" class="side_menu">menu03</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#none" class="logout">로그아웃</a>
       </header>
       <main class="main_area">
         <section class="main_img"></section>
@@ -35,6 +38,9 @@
         <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
       </div>
     </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script async src="../js/custom.js"></script>
   </body>
 </html>

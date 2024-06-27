@@ -4,11 +4,13 @@
 
 :root {
   --color-point: #5ac0fa;
+  --color-point-hover: #96d5fa;
   --color-background: #1e2022;
   --color-primary: #2b2d2f;
-  --color-secondary: #4a4e52;
+  --color-secondary: #4a4e52; /* hover, input */
   --color-basic-txt: #ffffff;
-  --color-sec-txt: #8f9295;
+  --color-second-txt: #eeeeee;
+  --color-third-txt: #8f9295;
   --color-btn-bg: #2e3134;
 }
 
@@ -33,16 +35,14 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
   cursor: pointer;
-  padding: 8px 9px;
   background-color: var(--color-btn-bg);
+  padding: 8px 9px;
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: 0.1s;
@@ -54,24 +54,34 @@ button:hover {
 
 .wrap {
   width: 100%;
-  height: 100vh;
-  background-color: inherit;
+  height: 100%;
+  background-image: url(../img/background_img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  overflow: auto;
 }
 
 .side_bar {
   width: 180px;
-  height: 100%;
-  background-color: inherit;
+  height: auto;
+  background-color: var(--color-background);
   border-right: 1px solid var(--color-point);
+  padding: 55px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side_top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 55px;
 }
 
-.logo {
-  display: block;
+.write_btn {
+  margin-top: 42px;
 }
 
 .side_menu_area {
@@ -80,18 +90,30 @@ button:hover {
 
 .side_menu {
   display: block;
-  padding: 4px 0;
-  margin-bottom: 12px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
   font-size: 14px;
   transition: 0.1s;
 }
 
-.side_menu_area > li:last-child > a {
-  margin-bottom: 0;
+.side_menu:last-child {
+  margin-bottom: none;
 }
 
 .side_menu:hover {
   color: var(--color-point);
+}
+
+.logout {
+  color: var(--color-point);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  display: block;
+}
+
+.logout:hover {
+  color: var(--color-point-hover);
 }
 
 .main_area {
@@ -112,13 +134,13 @@ button:hover {
 }
 
 .writing_title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
 .writing_time {
-  color: var(--color-sec-txt);
+  color: var(--color-third-txt);
   font-size: 12px;
 }
 
@@ -199,4 +221,9 @@ button:hover {
 .gotop.active {
   visibility: visible;
   opacity: 1;
+}
+
+.hidden {
+  display: none !important;
+  transition: all 0.3s ease-out;
 }
