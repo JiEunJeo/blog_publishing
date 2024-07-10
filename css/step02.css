@@ -1,8 +1,7 @@
 .writing_area,
 .detailed_category_area,
 .comment_area {
-  width: 100%;
-  max-width: 555px;
+  width: 60%;
   margin: auto;
   display: block;
   height: auto;

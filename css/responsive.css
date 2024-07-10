@@ -1,9 +1,7 @@
 @media screen and (max-width: 535px) {
+  /* common */
   .wrap {
     flex-direction: column;
-    height: 100%;
-    min-width: 280px;
-    min-height: 500px;
   }
 
   .side_bar {
@@ -16,27 +14,14 @@
     padding: 10px 16px;
   }
 
-  .logo > img {
-    width: 70px;
+  .side_top {
+    flex-direction: row;
   }
 
-  .side_menu_area {
-    display: flex;
-    margin: 0;
-    gap: 12px;
-  }
-
-  .side_menu {
-    margin-bottom: 0;
-  }
-
-  .write_btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .write_btn > img {
-    width: 20px;
+  .write_btn,
+  .side_menu_area,
+  .logout {
+    display: none;
   }
 
   .main_area {
@@ -44,11 +29,19 @@
     padding: 32px 16px 0px;
   }
 
+  .pagenation {
+    margin-top: 20px;
+  }
+
+  /* step01 */
   .category_area {
     padding-bottom: 32px;
   }
 
-  .pagenation {
-    margin-top: 20px;
+  /* step02 */
+  .writing_area,
+  .detailed_category_area,
+  .comment_area {
+    width: 100%;
   }
 }
