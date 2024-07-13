@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //gototop 버튼 표시
-  $(window).on("scroll", function () {
+  $(".main_area").on("scroll", function () {
     var gotopElement = $(".gotop");
 
     if ($(this).scrollTop() > 80) {
@@ -19,5 +19,5 @@ $(document).ready(function () {
 });
 
 function scrollToTop() {
-  $("html, body").animate({ scrollTop: 0 }, "smooth");
+  $(".main_area").animate({ scrollTop: 0 }, "smooth");
 }

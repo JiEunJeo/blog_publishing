@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 작성</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/edit.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <input type="text" placeholder="제목을 입력해 주세요"/>
+        <div>
+          <button type="button">임시 저장</button>
+          <button type="button">저장</button>
+        </div>
+      </header>
+      <main class="main_area">
+        <section class="writing_area">
+          <div class="writing_top">
+            <div>
+              <h1 class="writing_title">글 제목</h1>
+              <span class="writing_time">0000.00.00</span>
+            </div>
+            <ul class="writing_btns">
+              <li>
+                <button type="button">
+                  <img src="../img/delete.svg" alt="삭제" />
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <img src="../img/private.svg" alt="비공개" />
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <img src="../img/edit.svg" alt="수정" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="writing_main">
+            글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
+          </div>
+        </section>
+      </main>
+      <div class="gotop" onclick="scrollToTop()">
+        <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="../js/custom.js"></script>
+  </body>
+</html>

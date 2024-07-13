@@ -23,7 +23,7 @@
 .writing_btns {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .detailed_category_area {
