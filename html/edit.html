@@ -9,46 +9,47 @@
     <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
-    <div class="wrap">
-      <header>
-        <input type="text" placeholder="제목을 입력해 주세요"/>
-        <div>
-          <button type="button">임시 저장</button>
-          <button type="button">저장</button>
-        </div>
+    <div class="editer_wrap">
+      <header class="editer_header">
+        <input type="text" placeholder="제목을 입력해 주세요." class="post_title"/>
+        <button type="button" class="done_btn" id="upload_btn">등록</button>
       </header>
-      <main class="main_area">
-        <section class="writing_area">
-          <div class="writing_top">
-            <div>
-              <h1 class="writing_title">글 제목</h1>
-              <span class="writing_time">0000.00.00</span>
-            </div>
-            <ul class="writing_btns">
-              <li>
-                <button type="button">
-                  <img src="../img/delete.svg" alt="삭제" />
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <img src="../img/private.svg" alt="비공개" />
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <img src="../img/edit.svg" alt="수정" />
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="writing_main">
-            글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글
-          </div>
+      <main class="editer_area">
+        <section class="editer">
+          에디터 놓을 곳
         </section>
       </main>
-      <div class="gotop" onclick="scrollToTop()">
-        <img src="../img/gotop.svg" alt="맨 위로 이동 버튼" />
+
+      <!-- 모달 -->
+      <div class="modal">
+        <div class="modal_upload">
+          <button type="button" class="close_btn">
+            <img src="../img/close.svg" alt="닫기">
+          </button>
+          <fieldset>
+            <legend>카테고리<span class="point">*</span></legend>
+            <select id="category" required>
+              <option value="0" class="option_placeholer" disabled selected>선택 안함</option>
+              <option value="1">카테고리1</option>
+              <option value="2">카테고리2</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>공개 여부<span class="point">*</span></legend>
+            <div class="radio_box">
+              <input type="radio" id="public" name="whether" value="public" checked>
+              <label for="public" class="radio_txt">공개</label>
+            </div>
+            <div class="radio_box">
+              <input type="radio" id="private" name="whether" value="private">
+              <label for="private" class="radio_txt">비공개</label>
+            </div>
+          </fieldset>
+          <div class="modal_btn">
+            <button type="button" class="temporary_btn">임시 저장</button>
+            <button type="button" class="done_btn">등록</button>
+          </div>
+        </div>
       </div>
     </div>
 

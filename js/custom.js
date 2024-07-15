@@ -16,6 +16,14 @@ $(document).ready(function () {
       $(".signup_box").removeClass("hidden").fadeIn(10000);
     });
   });
+
+  //에디터 화면 - 모달 표시
+  $("#upload_btn").click(function (){
+    $(".modal").fadeIn();
+  });
+  $(".close_btn").click(function (){
+    $(".modal").fadeOut();
+  });
 });
 
 function scrollToTop() {
