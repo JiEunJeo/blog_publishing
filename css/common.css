@@ -221,7 +221,7 @@ button:hover {
   font-size: 12px;
 }
 
-.pagenation {
+.pagination {
   display: flex;
   align-items: center;
   justify-content: center;
