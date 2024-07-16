@@ -15,8 +15,7 @@
 
 .writing_top {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 32px;
 }
 
@@ -36,6 +35,7 @@
 .writing_btns {
   display: flex;
   align-items: center;
+  align-self: flex-end;
   gap: 12px;
 }
 
@@ -155,7 +155,7 @@
 .navi {
   position: absolute;
   top: 200px;
-  right: 6%;
+  right: 10%;
 }
 
 .navi_btn {

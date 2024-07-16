@@ -1,4 +1,15 @@
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 1000px) {
+  .writing_area,
+  .detailed_category_area,
+  .comment_area {
+    width: 70%;
+  }
+  .navi {
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 850px) {
   /* common */
   .wrap {
     flex-direction: column;
@@ -37,6 +48,32 @@
     display: inline-block;
   }
 
+  .gotop {
+    right: 1px;
+  }
+
+  /* login */
+  .form_box {
+    width: 90%;
+  }
+
+  /* main */
+  .main_visual {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-top: 0;
+  }
+
+  .main_txt {
+    max-width: 100%;
+    margin-top: 36px;
+  }
+
+  .main_img {
+    width: 100%;
+  }
+
   /* step01 */
   .category_area {
     padding-bottom: 32px;
@@ -47,5 +84,32 @@
   .detailed_category_area,
   .comment_area {
     width: 100%;
+  }
+
+  .navi {
+    display: none;
+  }
+
+  /* editor */
+  .editor_header {
+    padding: 0 16px;
+  }
+
+  .post_title {
+    padding-left: 0;
+  }
+
+  .editor {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .comment_name {
+    width: 175px;
+  }
+
+  .main_area::-webkit-scrollbar {
+    width: 0;
   }
 }
