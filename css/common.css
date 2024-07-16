@@ -41,7 +41,7 @@ a {
   cursor: pointer;
 }
 
-img{
+img {
   vertical-align: top;
 }
 
@@ -86,8 +86,10 @@ button:hover {
   align-items: center;
 }
 
-.write_btn {
+.side_btns {
   margin-top: 42px;
+  display: flex;
+  gap: 24px;
 }
 
 .side_menu_area {
@@ -110,7 +112,8 @@ button:hover {
   color: var(--color-point);
 }
 
-.logout {
+.logout,
+.mobile_logout {
   color: var(--color-point);
   font-size: 12px;
   font-weight: 500;
@@ -146,6 +149,28 @@ button:hover {
 .main_area::-webkit-scrollbar-track {
   background-color: var(--color-primary);
   border-radius: 2px;
+}
+
+.main_visual {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 280px;
+}
+
+.main_txt {
+  max-width: 30%;
+  color: var(--color-basic-txt);
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 0 0 2px #5ac0fa;
+  margin-top: 50px;
+}
+
+.main_img {
+  background-color: var(--color-primary);
+  width: 40%;
+  height: 320px;
 }
 
 .present_page {
@@ -211,10 +236,6 @@ button:hover {
   color: var(--color-point);
 }
 
-.main_img {
-  margin: auto;
-}
-
 .done_btn {
   padding: 8px 14px;
   box-shadow: none;
@@ -266,4 +287,46 @@ button:hover {
 .hidden {
   display: none !important;
   transition: all 0.3s ease-out;
+}
+
+/* 모바일에서 보이는 부분 */
+
+.menu_btn,
+.close_btn {
+  display: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu_box {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 85px);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-point);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.39);
+}
+
+.menu_btns {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.mobile_category {
+  margin-top: 36px;
+}
+
+.mobile_category .side_menu {
+  text-align: center;
+}
+
+.mobile_logout {
+  margin-bottom: 20px;
 }

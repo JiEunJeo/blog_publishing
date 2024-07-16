@@ -18,7 +18,7 @@
     flex-direction: row;
   }
 
-  .write_btn,
+  .side_btns,
   .side_menu_area,
   .logout {
     display: none;
@@ -31,6 +31,10 @@
 
   .pagenation {
     margin-top: 20px;
+  }
+
+  .menu_btn {
+    display: inline-block;
   }
 
   /* step01 */
