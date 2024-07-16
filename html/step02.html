@@ -15,9 +15,14 @@
           <a href="#none">
             <img src="../img/logo.png" alt="로고" />
           </a>
-          <button type="button" class="write_btn">
-            <img src="../img/edit.svg" alt="글쓰기" />
-          </button>
+          <div class="side_btns">
+            <button type="button" class="write_btn">
+              <img src="../img/edit.svg" alt="글쓰기" />
+            </button>
+            <button type="button" class="setting_btn">
+              <img src="../img/setting.svg" alt="설정" />
+            </button>
+          </div>
           <ul class="side_menu_area">
             <li>
               <a href="#none" class="side_menu present_page">menu01</a>
@@ -31,6 +36,37 @@
           </ul>
         </div>
         <a href="#none" class="logout">로그아웃</a>
+        <!-- 모바일 사이즈에서 보이는 부분 -->
+        <button type="button" class="menu_btn">
+          <img src="../img/menu.svg" alt="메뉴" />
+        </button>
+        <button type="button" class="close_btn">
+          <img src="../img/close.svg" alt="닫기" />
+        </button>
+        <div class="menu_box">
+          <div class="menu_top">
+            <div class="menu_btns">
+              <button type="button" class="write_btn">
+                <img src="../img/edit.svg" alt="글쓰기" />
+              </button>
+              <button type="button" class="setting_btn">
+                <img src="../img/setting.svg" alt="설정" />
+              </button>
+            </div>
+            <ul class="mobile_category">
+              <li>
+                <a href="#none" class="side_menu">menu01</a>
+              </li>
+              <li>
+                <a href="#none" class="side_menu">menu02</a>
+              </li>
+              <li>
+                <a href="#none" class="side_menu">menu03</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#none" class="mobile_logout">로그아웃</a>
+        </div>
       </header>
       <main class="main_area">
         <section class="writing_area">
