@@ -39,6 +39,31 @@ $(document).ready(function () {
       $(".menu_btn").show();
     });
   });
+
+  //글 상세 화면 - 버튼 토글
+  $(".delete_btn").click(function () {
+    $(this).fadeOut(function () {
+      $(".restore_btn").show();
+    });
+  });
+
+  $(".restore_btn").click(function () {
+    $(this).fadeOut(function () {
+      $(".delete_btn").show();
+    });
+  });
+
+  $(".private_btn").click(function () {
+    $(this).fadeOut(function () {
+      $(".public_btn").show();
+    });
+  });
+
+  $(".public_btn").click(function () {
+    $(this).fadeOut(function () {
+      $(".private_btn").show();
+    });
+  });
 });
 
 function scrollToTop() {

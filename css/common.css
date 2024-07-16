@@ -289,6 +289,13 @@ button:hover {
   transition: all 0.3s ease-out;
 }
 
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: var(--color-third-txt);
+}
+
 /* 모바일에서 보이는 부분 */
 
 .menu_btn,
