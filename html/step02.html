@@ -16,10 +16,18 @@
             <img src="../img/logo.png" alt="로고" />
           </a>
           <div class="side_btns">
-            <button type="button" class="write_btn">
+            <button
+              type="button"
+              class="write_btn tooltip"
+              data-tooltip="글쓰기"
+            >
               <img src="../img/edit.svg" alt="글쓰기" />
             </button>
-            <button type="button" class="setting_btn">
+            <button
+              type="button"
+              class="setting_btn tooltip"
+              data-tooltip="설정"
+            >
               <img src="../img/setting.svg" alt="설정" />
             </button>
           </div>
@@ -36,7 +44,7 @@
           </ul>
         </div>
         <a href="#none" class="logout">로그아웃</a>
-        <!-- 모바일 사이즈에서 보이는 부분 -->
+        <!-- 모바일 사이즈에서 보이는 부분 시작 -->
         <button type="button" class="menu_btn">
           <img src="../img/menu.svg" alt="메뉴" />
         </button>
@@ -67,30 +75,47 @@
           </div>
           <a href="#none" class="mobile_logout">로그아웃</a>
         </div>
+        <!-- 모바일 사이즈에서 보이는 부분 끝 -->
       </header>
       <main class="main_area">
         <section class="writing_area">
           <div class="writing_top">
             <ul class="writing_btns">
               <li>
-                <button type="button" class="delete_btn">
+                <button
+                  type="button"
+                  class="delete_btn tooltip"
+                  data-tooltip="삭제"
+                >
                   <img src="../img/delete.svg" alt="삭제" />
                 </button>
-                <button type="button" class="restore_btn">
+                <button
+                  type="button"
+                  class="restore_btn tooltip"
+                  data-tooltip="복구"
+                >
                   <img src="../img/restore.svg" alt="복구" />
                 </button>
               </li>
               <li>
-                <button type="button" class="private_btn">
+                <button
+                  type="button"
+                  class="private_btn tooltip"
+                  data-tooltip="비공개"
+                >
                   <img src="../img/private.svg" alt="비공개" />
                 </button>
-                <button type="button" class="public_btn">
+                <button
+                  type="button"
+                  class="public_btn tooltip"
+                  data-tooltip="공개"
+                >
                   <img src="../img/public.svg" alt="공개" />
                 </button>
               </li>
               <li>
-                <button type="button">
-                  <img src="../img/edit.svg" alt="수정" />
+                <button type="button" class="tooltip" data-tooltip="편집">
+                  <img src="../img/edit.svg" alt="편집" />
                 </button>
               </li>
             </ul>
