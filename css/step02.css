@@ -151,3 +151,55 @@
 .public_btn {
   display: none;
 }
+
+.navi {
+  position: absolute;
+  top: 200px;
+  right: 6%;
+}
+
+.navi_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.navi_btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 6.5px;
+  width: 2px;
+  height: 38px;
+  background-color: var(--color-third-txt);
+}
+
+.navi_dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-third-txt);
+  box-shadow: none;
+}
+
+.navi_label {
+  color: var(--color-third-txt);
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 6px;
+}
+
+.navi_btn:hover > .navi_dot {
+  background-color: var(--color-basic-txt);
+}
+
+.navi_btn:hover > .navi_label {
+  color: var(--color-basic-txt);
+}
+
+.navi > ul > li:last-child::after {
+  display: none;
+}
