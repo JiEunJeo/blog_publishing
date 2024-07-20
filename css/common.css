@@ -180,9 +180,10 @@ button:hover {
 
 .main_visual {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10%;
-  margin-top: 280px;
+  align-items: center;
+  gap: 48px;
 }
 
 .main_txt {
