@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="/v2/css/common.css" />
+    <link rel="stylesheet" href="/v2/css/login.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 로그인 -->
+      <form class="form_box login_box">
+        <div href="#none" class="logo">
+          <img src="../img/logo.svg" alt="로고" />
+          <h2>Welcom J-Park Labs</h2>
+        </div>
+        <input type="text" placeholder="ID" />
+        <input type="password" placeholder="Password" />
+        <button type="button" class="point_btn">Login</button>
+        <button type="button" class="sub_btn signup_btn">Sign up</button>
+        <a href="#none" class="find_pw">Forgot your password </a>
+        <div class="icon_box">
+          <img src="../img/icon01.png" alt="programing" />
+          <img src="../img/icon02.png" alt="django" />
+          <img src="../img/icon03.png" alt="fastapi" />
+        </div>
+      </form>
+
+      <!-- 회원가입 -->
+      <form class="form_box signup_box hidden">
+        <a href="#none" class="logo">
+          <img width="60" src="../img/signup.png" alt="로고" />
+          <h2>Sign up to J-Park Labs</h2>
+        </a>
+        <input type="text" placeholder="ID*" />
+        <input type="text" placeholder="Your name*" />
+        <input type="password" placeholder="Password*" />
+        <button type="button" class="point_btn">Sign up</button>
+      </form>
+    </div>
+
+    <p class="copyright">ⓒ 2025 Jieun. All rights reserved.</p>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="/js/custom.js"></script>
+  </body>
+</html>

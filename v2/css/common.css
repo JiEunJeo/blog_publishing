@@ -1,0 +1,360 @@
+/* 공통 */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --color-body: #f0f0f0;
+  --color-point: #5ac0fa;
+  --color-primary: #0c1a39;
+  --hover-primary: #253351;
+  --hover-basic: #f0f0f0;
+  --color-secondary: #848b9b;
+  --color-border: #caccd0;
+  --shadow-input: inset 2px 2px 4px #00000014;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-body);
+  color: var(--color-primary);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s;
+  outline: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  width: max-content;
+  background-color: var(--color-secondary);
+  color: var(--color-basic-txt);
+  text-align: center;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.side_bar {
+  width: 210px;
+  height: 100vh;
+  background-color: var(--color-background);
+  border-right: 1px solid var(--color-point);
+  padding: 55px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side_btns {
+  margin-top: 42px;
+  display: flex;
+  gap: 24px;
+}
+
+.side_menu_area {
+  margin: 42px 0;
+}
+
+.side_menu {
+  display: block;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: 0.1s;
+}
+
+.side_menu:last-child {
+  margin-bottom: 0;
+}
+
+.side_menu:hover {
+  color: var(--color-point);
+}
+
+.logout,
+.mobile_logout {
+  color: var(--color-point);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  display: block;
+}
+
+.logout:hover {
+  color: var(--color-point-hover);
+}
+
+.main_area {
+  width: calc(100% - 210px);
+  height: 100%;
+  background-color: inherit;
+  padding: 84px 20px 42px;
+  overflow-y: scroll;
+}
+
+.main_area::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main_area::-webkit-scrollbar-thumb {
+  background-color: var(--color-third-txt);
+  border-radius: 2px;
+}
+
+.main_area::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-second-txt);
+}
+
+.main_area::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.main_visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.main_txt {
+  max-width: 30%;
+  color: var(--color-basic-txt);
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 0 0 2px #5ac0fa;
+  margin-top: 50px;
+}
+
+.main_img {
+  background-color: var(--color-primary);
+  width: 40%;
+  height: 320px;
+}
+
+.present_page {
+  color: var(--color-point);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.disable_btn {
+  opacity: 0.7;
+}
+
+.writing_title {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.writing_time {
+  color: var(--color-third-txt);
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.page_arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.page_prev {
+  border-right: 6px solid var(--color-basic-txt);
+}
+
+.page_next {
+  border-left: 6px solid var(--color-basic-txt);
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.page {
+  display: inline-block;
+  padding: 2px;
+  font-size: 14px;
+  transition: 0.1s;
+}
+
+.page:hover {
+  color: var(--color-point);
+}
+
+.done_btn {
+  padding: 8px 14px;
+  box-shadow: none;
+  border-radius: 4px;
+  background-color: var(--color-point);
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.done_btn:hover {
+  background-color: var(--color-point-hover);
+}
+
+.gotop {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 1.5%;
+  z-index: 100;
+  background-color: var(--color-secondary);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gotop:hover {
+  background-color: var(--color-btn-bg);
+}
+
+.gotop > img {
+  width: 20px;
+  height: 20px;
+}
+
+.gotop.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  display: none !important;
+  transition: all 0.3s ease-out;
+}
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: var(--color-third-txt);
+}
+
+/* 모바일에서 보이는 부분 */
+
+.menu_btn,
+.close_btn {
+  display: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu_box {
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 85px);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-point);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.39);
+}
+
+.menu_btns {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.mobile_category {
+  margin-top: 36px;
+}
+
+.mobile_category .side_menu {
+  text-align: center;
+}
+
+.mobile_logout {
+  margin-bottom: 20px;
+}

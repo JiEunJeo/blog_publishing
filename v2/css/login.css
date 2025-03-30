@@ -1,0 +1,135 @@
+.form_box {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 0px 6px 8px 0px #0000001f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 25px 120px 65px;
+}
+
+.logo {
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form_box > input {
+  width: 310px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+  box-shadow: var(--shadow-input);
+  padding: 0 2px 0 14px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.form_box > input::placeholder {
+  font-size: 16px;
+  color: var(--color-secondary);
+}
+
+.form_box > input:focus {
+  border: 2px solid var(--color-secondary);
+}
+
+.form_box > button {
+  width: 310px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.point_btn {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  margin-top: 10px;
+}
+.point_btn:hover {
+  background-color: var(--hover-primary);
+}
+
+.sub_btn {
+  background-color: #ffffff;
+  border: 1px solid var(--color-secondary);
+  margin-top: 20px;
+}
+.sub_btn:hover {
+  background-color: var(--hover-basic);
+}
+
+.find_pw {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.icon_box {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-top: 60px;
+}
+.icon_box > img {
+  width: 45px;
+}
+.icon_box > img:nth-child(1) {
+  animation: icon1 0.7s infinite alternate-reverse;
+}
+.icon_box > img:nth-child(2) {
+  animation: icon2 0.7s infinite alternate-reverse;
+  animation-delay: 0.3s;
+}
+.icon_box > img:nth-child(3) {
+  animation: icon3 0.7s infinite alternate-reverse;
+  animation-delay: 0.4s;
+}
+@keyframes icon1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+@keyframes icon2 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+@keyframes icon3 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+.copyright {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 34px;
+  color: var(--color-secondary);
+  font-size: 12px;
+}
