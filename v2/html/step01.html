@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/v2/img/favicon.png" />
-    <title>J-Park Labs - Home</title>
+    <title>J-Park Labs - Category</title>
     <link rel="stylesheet" href="/v2/css/common.css" />
-    <link rel="stylesheet" href="/v2/css/home.css" />
+    <link rel="stylesheet" href="/v2/css/step01.css" />
     <link rel="stylesheet" href="/v2/css/responsive.css" />
   </head>
   <body>
@@ -29,7 +29,7 @@
           </div>
           <ul class="side_menu_area">
             <li>
-              <a href="/v2/html/step01.html" class="side_menu">
+              <a href="/v2/html/step01.html" class="side_menu present_category">
                 <div>
                   <img src="/v2/img/folder.svg" alt="사이드 폴더" />
                   <span>menusdfsfsdfsfsd01</span>
@@ -114,84 +114,68 @@
       <main class="main_area">
         <a href="/v2/html/login.html" class="login_btn">Login</a>
         <a href="#none" class="logout_btn">Log out</a>
-        <section class="intro">
-          <p>
-            Welcome to <b>J-Park Labs.</b>
-            <br />
-            This homepage is powered by <b>Nginx, Django, and fastAPI.</b>
-          </p>
-          <img src="/v2/img/icon01.png" alt="nginx" />
-          <img src="/v2/img/icon02.png" alt="django" />
-          <img src="/v2/img/icon03.png" alt="fastapi" />
-        </section>
-        <section>
-          <ul class="total_ul">
-            <li class="total_li white_bg">
-              <h3>Total visitors</h3>
-              <p>500</p>
-            </li>
-            <li class="total_li white_bg">
-              <h3>Today's visitors</h3>
-              <p>1</p>
-            </li>
-            <li class="total_li white_bg">
-              <h3>Today's top views</h3>
-              <p>-</p>
-            </li>
+        <aside class="category_title">
+          <img src="/v2/img/folder_big.svg" alt="카테고리" />
+          <h2>menusdfsfsdfsfsd01</h2>
+          <span>100</span>
+        </aside>
+        <ul class="write_ul">
+          <li>
+            <a href="#none" class="write_li white_bg">
+              <h3>글 제목</h3>
+              <p>
+                글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글
+                내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용
+                글 내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글
+                내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글
+                내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글
+                내용글 내용 글 내용글 내용 글 내용글 내용 글 내용글 내용 글
+                내용글 내용 글 내용
+              </p>
+              <div class="write_li_info">
+                <p>2024-08-20 21:09:59</p>
+                <p class="write_state">
+                  <span>Temporary Save</span>
+                  <span>Public</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="write_li white_bg">
+              <h3>글 제목</h3>
+              <p>글 내용</p>
+              <div class="write_li_info">
+                <p>2024-08-20 21:09:59</p>
+                <p class="write_state">
+                  <span>Temporary Save</span>
+                  <span>Public</span>
+                  <span>Deleted</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="pagination">
+          <button type="button" class="disable_btn">
+            <i class="page_arrow page_prev"></i>
+          </button>
+          <ul class="pages">
+            <li><a href="#none" class="page present_page">1</a></li>
+            <li><a href="#none" class="page">2</a></li>
+            <li><a href="#none" class="page">3</a></li>
+            <li><a href="#none" class="page">4</a></li>
+            <li><a href="#none" class="page">5</a></li>
+            <li><a href="#none" class="page">6</a></li>
+            <li><a href="#none" class="page">7</a></li>
+            <li><a href="#none" class="page">8</a></li>
+            <li><a href="#none" class="page">9</a></li>
+            <li><a href="#none" class="page">10</a></li>
           </ul>
-        </section>
-        <section class="chart white_bg">
-          <h3>Recent visitor statistics</h3>
-          <div class="chart_area">!!!차트를 넣으시오!!!</div>
-        </section>
-        <section class="recent_area">
-          <div class="white_bg">
-            <h3>Recent Posts</h3>
-            <ul>
-              <li>
-                <a href="#none" class="recent_li">
-                  <p>
-                    <b>카테고리</b>
-                    <span>글 제목</span>
-                  </p>
-                  <span>2024-08-20 21:09:59</span>
-                </a>
-              </li>
-              <li>
-                <a href="#none" class="recent_li">
-                  <p>
-                    <b>카테고리</b>
-                    <span>글 제목</span>
-                  </p>
-                  <span>2024-08-20 21:09:59</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="white_bg">
-            <h3>Recent Comments</h3>
-            <ul>
-              <li>
-                <a href="#none" class="recent_li">
-                  <p>
-                    <b>이름</b>
-                    <span>댓글 내용</span>
-                  </p>
-                  <span>2024-08-20 21:09:59</span>
-                </a>
-              </li>
-              <li>
-                <a href="#none" class="recent_li">
-                  <p>
-                    <b>이름</b>
-                    <span>댓글 내용</span>
-                  </p>
-                  <span>2024-08-20 21:09:59</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <button type="button">
+            <i class="page_arrow page_next"></i>
+          </button>
+        </div>
       </main>
       <!-- gotop 버튼 -->
       <div class="gotop" onclick="scrollToTop()">
