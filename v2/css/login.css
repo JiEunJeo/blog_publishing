@@ -92,41 +92,13 @@
 }
 .icon_box > img {
   width: 45px;
-}
-.icon_box > img:nth-child(1) {
-  animation: icon1 0.7s infinite alternate-reverse;
+  animation: icon 0.7s infinite alternate-reverse;
 }
 .icon_box > img:nth-child(2) {
-  animation: icon2 0.7s infinite alternate-reverse;
   animation-delay: 0.3s;
 }
 .icon_box > img:nth-child(3) {
-  animation: icon3 0.7s infinite alternate-reverse;
   animation-delay: 0.4s;
-}
-@keyframes icon1 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20%);
-  }
-}
-@keyframes icon2 {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-20%);
-  }
-}
-@keyframes icon3 {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-20%);
-  }
 }
 
 .login_footer {
@@ -147,8 +119,4 @@
 
 .login_footer > div > a {
   text-decoration: underline;
-}
-
-.copyright {
-  text-align: center;
 }
