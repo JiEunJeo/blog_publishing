@@ -47,11 +47,15 @@
   border: 2px solid var(--color-secondary);
 }
 
-.form_box > button {
+.point_btn,
+.sub_btn {
   width: 310px;
   height: 60px;
   font-size: 20px;
   font-weight: 500;
+  border-radius: 4px;
+  line-height: 60px;
+  text-align: center;
 }
 
 .point_btn {
@@ -125,11 +129,26 @@
   }
 }
 
-.copyright {
+.login_footer {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 34px;
   color: var(--color-secondary);
   font-size: 12px;
+}
+.login_footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 8px;
+}
+
+.login_footer > div > a {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
 }
