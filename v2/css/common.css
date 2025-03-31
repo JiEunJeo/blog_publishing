@@ -75,10 +75,11 @@ button {
   transform: translateX(-50%);
   padding: 6px 12px;
   width: max-content;
-  background-color: var(--color-secondary);
-  color: var(--color-basic-txt);
+  background-color: var(--color-body);
+  color: var(--color-primary);
+  font-size: 15px;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 4px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s;
@@ -241,7 +242,6 @@ button {
 }
 
 .logout_btn {
-  display: none;
   background-color: #ffffff;
   border: 1px solid var(--color-secondary);
 }
@@ -253,17 +253,6 @@ button {
   background-color: #ffffff;
   border: 1px solid var(--color-border);
   border-radius: 4px;
-}
-
-.writing_title {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.writing_time {
-  color: var(--color-third-txt);
-  font-size: 12px;
 }
 
 .disable_btn {
@@ -282,7 +271,6 @@ button {
   line-height: 30px;
   background-color: #ffffff;
   border: 1px solid var(--color-border);
-  border-radius: 4px;
 }
 .pagination > button:hover {
   background-color: var(--hover-basic);
@@ -321,21 +309,6 @@ button {
   text-decoration: underline;
 }
 
-.done_btn {
-  padding: 8px 14px;
-  box-shadow: none;
-  border-radius: 4px;
-  background-color: var(--color-point);
-  color: var(--color-primary);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.done_btn:hover {
-  background-color: var(--color-point-hover);
-}
-
 .gotop {
   display: flex;
   visibility: hidden;
@@ -371,13 +344,6 @@ button {
 .hidden {
   display: none !important;
   transition: all 0.3s ease-out;
-}
-
-.line {
-  display: inline-block;
-  width: 1px;
-  height: 12px;
-  background-color: var(--color-third-txt);
 }
 
 /* 모바일에서 보이는 부분 */
@@ -434,4 +400,43 @@ button {
   font-weight: 500;
   padding: 8px 12px;
   margin-bottom: 20px;
+}
+/* step01,02 공통 css */
+.category_title {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 240px);
+  height: 104px;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.category_title > h2 {
+  font-weight: 500;
+}
+.category_title > span {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.write_state > span {
+  position: relative;
+  margin-left: 10px;
+  color: var(--color-secondary);
+}
+.write_state > span::before {
+  content: "|";
+  position: absolute;
+  color: var(--color-border);
+  left: -10px;
+}
+.write_state > span:first-child {
+  margin-left: 0;
+}
+.write_state > span:first-child::before {
+  display: none;
 }
