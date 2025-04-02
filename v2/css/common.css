@@ -332,10 +332,6 @@ button {
   background-color: var(--hover-basic);
 }
 
-.gotop > img {
-  rotate: 90deg;
-}
-
 .gotop.active {
   visibility: visible;
   opacity: 1;
