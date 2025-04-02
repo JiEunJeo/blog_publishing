@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/v2/img/favicon.png" />
+    <title>J-Park Labs - Edit</title>
+    <link rel="stylesheet" href="/v2/css/common.css" />
+    <link rel="stylesheet" href="/v2/css/edit.css" />
+    <link rel="stylesheet" href="/v2/css/responsive.css" />
+  </head>
+  <body>
+    <header class="editor_header">
+      <input type="text" placeholder="Title.." class="post_title" />
+      <button type="button" class="edit_btn" id="upload_btn">Done</button>
+    </header>
+    <main class="editor_area">
+      <section class="editor white_bg">!!!에디터 놓을 곳!!!</section>
+    </main>
+
+    <!-- 모달 -->
+    <div class="modal">
+      <div class="modal_upload">
+        <fieldset class="dropdown_box">
+          <h4>Category<span>*</span></h4>
+          <div class="dropdown">
+            <button class="dropdown_btn">
+              Not selected<i class="arrow"></i>
+            </button>
+            <div class="dropdown_content">
+              <a href="#" class="active">카테고리1</a>
+              <a href="#">카테고리2</a>
+              <a href="#">카테고리3</a>
+              <a href="#">카테고리4</a>
+              <a href="#">카테고리5</a>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="radio_box">
+          <label class="radio">
+            <input type="radio" name="whether" value="public" checked />
+            <span class="radio_check">Public</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="whether" value="private" />
+            <span class="radio_check">Private</span>
+          </label>
+        </fieldset>
+        <div class="modal_btn">
+          <button type="button" class="cancel_btn">Cancel</button>
+          <button type="button" class="register_btn">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="/v2/js/custom.js"></script>
+  </body>
+</html>
