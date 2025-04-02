@@ -96,3 +96,7 @@
 .recent_li:hover {
   background-color: var(--hover-basic);
 }
+
+footer {
+  padding: 85px 0 40px;
+}

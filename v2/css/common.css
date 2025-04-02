@@ -436,3 +436,16 @@ button {
 .write_state > span:first-child::before {
   display: none;
 }
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 8px;
+}
+footer > div > a {
+  color: var(--color-secondary);
+  font-size: 12px;
+  text-decoration: underline;
+}

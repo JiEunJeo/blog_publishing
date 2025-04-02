@@ -106,17 +106,4 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 34px;
-  color: var(--color-secondary);
-  font-size: 12px;
-}
-.login_footer > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 8px;
-}
-
-.login_footer > div > a {
-  text-decoration: underline;
 }
