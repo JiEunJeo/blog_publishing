@@ -54,13 +54,16 @@
 .writing_btns > li > button:hover {
   background-color: var(--hover-basic);
 }
+.restore_btn,
+.public_btn {
+  display: none;
+}
 
 .writing_main {
   overflow-wrap: break-word;
 }
 
 .detailed_title {
-  color: var(--color-primary);
   font-weight: 400;
   margin-bottom: 14px;
 }
