@@ -27,3 +27,13 @@
   margin-top: 16px;
   color: var(--color-secondary);
 }
+
+.side_menu_area {
+  height: calc(100vh - 94px - 76px - 36px - 98px - 26px - 150px);
+}
+.login_btn,
+.logout_btn {
+  position: unset;
+  margin-top: 30px;
+  font-size: 15px;
+}

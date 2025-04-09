@@ -12,14 +12,14 @@ $(document).ready(function () {
 
   //모바일 사이즈 시 메뉴 상호작용
   $(".menu_btn").click(function () {
-    $(".menu_box").css("display", "flex").hide().slideDown(800);
+    $(".menu_box").css("display", "flex").hide().slideDown(500);
     $(this).fadeOut(function () {
       $(".close_btn").show();
     });
   });
 
   $(".close_btn").click(function () {
-    $(".menu_box").slideUp(800);
+    $(".menu_box").slideUp(500);
     $(this).fadeOut(function () {
       $(".menu_btn").show();
     });

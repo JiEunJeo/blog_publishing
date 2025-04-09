@@ -187,16 +187,11 @@ button {
   text-align: right;
 }
 
-.copyright {
-  color: var(--color-secondary);
-  font-size: 12px;
-  text-align: center;
-}
-
 .main_area {
   position: relative;
   width: calc(100% - 240px);
   height: 100%;
+  padding: 0 40px 48px;
   overflow-y: scroll;
 }
 
@@ -321,7 +316,7 @@ button {
   position: fixed;
   bottom: 2%;
   right: 1.5%;
-  z-index: 100;
+  z-index: 1;
   background-color: #ffffff;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -354,10 +349,10 @@ button {
 .menu_box {
   position: absolute;
   z-index: 1;
-  top: 70px;
+  top: 80px;
   left: 0;
   width: 100%;
-  height: calc(100% - 85px);
+  height: calc(100vh - 80px);
   background-color: #ffffff;
   border-bottom: 1px solid var(--color-border);
   display: none;
@@ -402,6 +397,7 @@ button {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   width: calc(100% - 240px);
   height: 104px;
   background-color: #ffffff;
@@ -437,6 +433,9 @@ button {
   display: none;
 }
 
+footer {
+  padding: 85px 0 0;
+}
 footer > div {
   display: flex;
   align-items: center;
@@ -448,4 +447,15 @@ footer > div > a {
   color: var(--color-secondary);
   font-size: 12px;
   text-decoration: underline;
+}
+.copyright {
+  color: var(--color-secondary);
+  font-size: 12px;
+  text-align: center;
+}
+footer > .copyright {
+  margin-top: 24px;
+}
+footer > .footer_copyright {
+  margin-top: 0;
 }
