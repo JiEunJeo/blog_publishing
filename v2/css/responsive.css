@@ -162,6 +162,10 @@
   .comment_area {
     width: 100%;
   }
+  .step02_main,
+  .write_ul {
+    padding-top: 140px;
+  }
 
   /* editor */
   .editor_header {
