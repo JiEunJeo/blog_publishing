@@ -182,8 +182,9 @@ button {
   background-color: var(--hover-basic);
 }
 
-.present_category > div > span {
+.present_category {
   text-decoration: underline;
+  background-color: var(--hover-basic);
 }
 
 .write_count {
