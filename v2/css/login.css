@@ -1,3 +1,10 @@
+.login_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .form_box {
   background-color: #ffffff;
   border: 1px solid var(--color-border);
@@ -8,7 +15,7 @@
   align-items: center;
   width: 550px;
   height: auto;
-  margin: 150px auto 0;
+  margin: 0 auto;
   padding: 25px 120px 65px;
 }
 
